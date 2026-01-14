@@ -47,7 +47,12 @@
     <!-- Navigation -->
     <nav class="nav" id="mainNav">
         <div class="nav__container">
-            <a href="#home" class="nav__brand">Gridline Studio</a>
+            <div class="logo">
+                <a href="#home" class="nav__brand">Gridline Studio</a>
+                <div class="number">
+                    <p>(234) 90-6171-2509</p>
+                </div>
+            </div>
 
             <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
                 <span></span>
@@ -369,8 +374,7 @@
                     <div class="founder__image-wrapper">
                         <div class="founder__image">
                             <!-- Replace 'your-image.jpg' with your actual image path -->
-                            <img src="img.jpeg" alt="Michael Omale - Founder of Gridline Studio"
-                                class="founder__photo">
+                            <img src="img.jpeg" alt="Michael Omale - Founder of Gridline Studio" class="founder__photo">
 
                             <!-- Fallback placeholder - Remove the comment tags around img above when you add your image -->
                             <div class="founder__image-placeholder">
@@ -409,10 +413,10 @@
                         <div class="founder__expertise">
                             <h4>Specializations</h4>
                             <div class="expertise-tags">
-                                <span class="expertise-tag">React Development</span>
-                                <span class="expertise-tag">UI/UX Design</span>
-                                <span class="expertise-tag">Frontend Architecture</span>
                                 <span class="expertise-tag">Product Strategy</span>
+                                <span class="expertise-tag">Frontend Architecture</span>
+                                <span class="expertise-tag">UI/UX Design</span>
+                                <span class="expertise-tag">React Development</span>
                             </div>
                         </div>
 
@@ -467,6 +471,10 @@
                             application, a design refresh, or technical consultation, let's discuss how we can help.
                         </p>
 
+                        <div>
+                            <h4>Phone us:</h4>
+                            <p>(234) 90-6171-2509</p>
+                        </div>
                         <div class="contact__details">
                             <div class="contact__detail">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -511,7 +519,7 @@
                         </div>
                     </div>
 
-                    <form class="contact__form" id="contactForm">
+                    <form class="contact__form" id="contactForm" action="https://formspree.io/f/mbddldka" method="POST">
                         <div class="form-group">
                             <label for="name" class="form-label">Full Name</label>
                             <input type="text" id="name" name="name" class="form-input" required autocomplete="name">
@@ -545,9 +553,8 @@
                             <span class="form-error" id="messageError"></span>
                         </div>
 
-                        <button type="submit" class="btn btn--primary btn--full">
-                            Send Message
-                        </button>
+                        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+                        <input type="text" name="company" autocomplete="off" tabindex="-1" style="display:none" />
                     </form>
                 </div>
             </div>

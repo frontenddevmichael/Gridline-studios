@@ -370,6 +370,14 @@ ul, ol {
     transition: all var(--transition-base);
 }
 
+nav .logo{
+    /* border: 2px solid white; */
+}
+
+nav .logo p{
+    font-size: 1rem;
+}
+
 .nav.scrolled {
     box-shadow: var(--shadow-sm);
 }
@@ -386,7 +394,7 @@ ul, ol {
 
 .nav__brand {
     font-family: var(--font-display);
-    font-size: var(--text-xl);
+    font-size: 2rem;
     font-weight: 600;
 }
 
@@ -535,6 +543,7 @@ ul, ol {
     display: flex;
     align-items: center;
     padding-top: var(--nav-height);
+    margin-top: 1rem;
 }
 
 .hero {
@@ -998,6 +1007,9 @@ ul, ol {
 }
 
 .founder__cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: var(--space-6);
 }
 
