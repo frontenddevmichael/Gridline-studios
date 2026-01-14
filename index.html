@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Gridline Studio — Development Agency specializing in React, modern web applications, and digital experiences.">
+    <meta name="keywords"
+        content="development agency, React development, web applications, digital studio, frontend development, Nigeria">
+    <meta name="author" content="Gridline Studio">
+
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="Gridline Studio — Development Agency">
+    <meta property="og:description"
+        content="Professional development agency specializing in React, modern web applications, and digital experiences.">
+    <meta property="og:type" content="website">
+
+    <title>Gridline Studio — Development Agency</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="mainNav">
+        <div class="nav__container">
+            <a href="#home" class="nav__brand">Gridline Studio</a>
+
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav__menu" id="navMenu">
+                <li><a href="#home" class="nav__link active">Home</a></li>
+                <li><a href="#services" class="nav__link">Services</a></li>
+                <li><a href="#work" class="nav__link">Work</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <svg class="theme-toggle__icon theme-toggle__icon--sun" width="20" height="20" viewBox="0 0 20 20"
+                    fill="none">
+                    <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M10 2V4M10 16V18M18 10H16M4 10H2M15.657 4.343L14.243 5.757M5.757 14.243L4.343 15.657M15.657 15.657L14.243 14.243M5.757 5.757L4.343 4.343"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+                <svg class="theme-toggle__icon theme-toggle__icon--moon" width="20" height="20" viewBox="0 0 20 20"
+                    fill="none">
+                    <path
+                        d="M17.5 11.18C16.38 11.74 15.12 12.06 13.78 12.06C9.08 12.06 5.28 8.26 5.28 3.56C5.28 2.22 5.6 0.96 6.16 -0.16C3.02 1.08 0.78 4.18 0.78 7.78C0.78 12.48 4.58 16.28 9.28 16.28C12.88 16.28 15.98 14.04 17.22 10.9"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home Section -->
+        <section class="section section--hero" id="home">
+            <div class="container">
+                <div class="hero">
+                    <div class="hero__content">
+                        <p class="hero__label">Development Agency</p>
+                        <h1 class="hero__title">
+                            Building digital products<br>
+                            that drive<br>
+                            <span class="hero__title--accent">real results</span>
+                        </h1>
+                        <p class="hero__description">
+                            We're Gridline Studio, a development agency based in Lagos, Nigeria.
+                            We specialize in React development and crafting modern web applications that combine
+                            innovative technology with exceptional user experiences.
+                        </p>
+                        <div class="hero__actions">
+                            <a href="#services" class="btn btn--primary">Our Services</a>
+                            <a href="#contact" class="btn btn--secondary">Start a Project</a>
+                        </div>
+                    </div>
+                    <div class="hero__visual">
+                        <div class="hero__graphic">
+                            <div class="graphic-element graphic-element--1"></div>
+                            <div class="graphic-element graphic-element--2"></div>
+                            <div class="graphic-element graphic-element--3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section section--services" id="services">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">What We Do</h2>
+                    <p class="section__subtitle">Full-stack development services to transform your digital vision into
+                        reality</p>
+                </div>
+
+                <div class="services">
+                    <article class="service-card" data-service="react-development">
+                        <div class="service-card__number">01</div>
+                        <h3 class="service-card__title">React Development</h3>
+                        <p class="service-card__description">
+                            We build scalable, high-performance React applications with modern best practices.
+                            From single-page applications to complex web platforms, we deliver solutions that scale with
+                            your business.
+                        </p>
+                        <ul class="service-card__list">
+                            <li>React & Next.js Applications</li>
+                            <li>State Management (Redux, Context API)</li>
+                            <li>Component Libraries & Design Systems</li>
+                            <li>Performance Optimization</li>
+                        </ul>
+                        <button class="service-card__btn" data-service-id="react-development">
+                            Get Started
+                        </button>
+                    </article>
+
+                    <article class="service-card" data-service="fullstack">
+                        <div class="service-card__number">02</div>
+                        <h3 class="service-card__title">Full-Stack Development</h3>
+                        <p class="service-card__description">
+                            Complete end-to-end development services covering both frontend and backend.
+                            We architect robust systems that handle complex business logic while maintaining excellent
+                            user experiences.
+                        </p>
+                        <ul class="service-card__list">
+                            <li>RESTful & GraphQL APIs</li>
+                            <li>Database Design & Integration</li>
+                            <li>Authentication & Security</li>
+                            <li>Cloud Deployment (AWS, Vercel)</li>
+                        </ul>
+                        <button class="service-card__btn" data-service-id="fullstack">
+                            Get Started
+                        </button>
+                    </article>
+
+                    <article class="service-card" data-service="product-design">
+                        <div class="service-card__number">03</div>
+                        <h3 class="service-card__title">UI/UX & Product Design</h3>
+                        <p class="service-card__description">
+                            Strategic design that bridges business goals with user needs. We create intuitive
+                            interfaces backed by research, testing, and data-driven decisions.
+                        </p>
+                        <ul class="service-card__list">
+                            <li>User Research & Testing</li>
+                            <li>Interface Design & Prototyping</li>
+                            <li>Design Systems & Components</li>
+                            <li>Product Strategy</li>
+                        </ul>
+                        <button class="service-card__btn" data-service-id="product-design">
+                            Get Started
+                        </button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section class="section section--work" id="work">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Our Work</h2>
+                    <p class="section__subtitle">Recent projects that showcase our expertise</p>
+                </div>
+
+                <div class="work-grid">
+                    <article class="work-card">
+                        <div class="work-card__image">
+                            <div class="work-card__placeholder">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                    <rect width="60" height="60" rx="8" stroke="currentColor" stroke-width="2" />
+                                    <path d="M20 30L30 40L40 20" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="work-card__content">
+                            <h3 class="work-card__title">E-Commerce Platform</h3>
+                            <p class="work-card__description">
+                                Built a modern React-based e-commerce solution with real-time inventory management,
+                                payment integration, and admin dashboard.
+                            </p>
+                            <div class="work-card__tags">
+                                <span class="work-card__tag">React</span>
+                                <span class="work-card__tag">Node.js</span>
+                                <span class="work-card__tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="work-card">
+                        <div class="work-card__image">
+                            <div class="work-card__placeholder">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                    <rect width="60" height="60" rx="8" stroke="currentColor" stroke-width="2" />
+                                    <circle cx="30" cy="30" r="12" stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="work-card__content">
+                            <h3 class="work-card__title">SaaS Dashboard</h3>
+                            <p class="work-card__description">
+                                Designed and developed a comprehensive analytics dashboard with real-time data
+                                visualization and team collaboration features.
+                            </p>
+                            <div class="work-card__tags">
+                                <span class="work-card__tag">Next.js</span>
+                                <span class="work-card__tag">TypeScript</span>
+                                <span class="work-card__tag">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="work-card">
+                        <div class="work-card__image">
+                            <div class="work-card__placeholder">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                    <rect width="60" height="60" rx="8" stroke="currentColor" stroke-width="2" />
+                                    <path d="M25 20L35 30L25 40" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="work-card__content">
+                            <h3 class="work-card__title">Mobile Banking App</h3>
+                            <p class="work-card__description">
+                                Created a responsive web application for mobile banking with secure transactions,
+                                account management, and bill payments.
+                            </p>
+                            <div class="work-card__tags">
+                                <span class="work-card__tag">React</span>
+                                <span class="work-card__tag">Redux</span>
+                                <span class="work-card__tag">REST API</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section section--about" id="about">
+            <div class="container">
+                <div class="about">
+                    <div class="about__content">
+                        <div class="section__header">
+                            <h2 class="section__title">About Gridline Studio</h2>
+                            <p class="section__subtitle">Who we are and how we work</p>
+                        </div>
+
+                        <div class="about__story">
+                            <p>
+                                Gridline Studio is a modern development agency based in Lagos, Nigeria. We specialize
+                                in building scalable React applications and digital products that solve real business
+                                problems.
+                                Our team combines technical expertise with design thinking to deliver solutions that
+                                users love.
+                            </p>
+                            <p>
+                                Founded by Michael Omale, a frontend developer and UI/UX designer with a background in
+                                Computer Science from Bells University of Technology, we've grown into a team of
+                                passionate
+                                developers and designers committed to excellence in every project.
+                            </p>
+                            <p>
+                                We believe great software is built through collaboration, attention to detail, and
+                                a deep understanding of both technology and user needs. Every line of code we write
+                                and every interface we design reflects our commitment to quality and innovation.
+                            </p>
+                        </div>
+
+                        <div class="about__values">
+                            <h3>Our Core Values</h3>
+                            <div class="values-grid">
+                                <div class="value-card">
+                                    <h4>Quality First</h4>
+                                    <p>
+                                        We write clean, maintainable code and create intuitive interfaces.
+                                        No shortcuts, no compromises.
+                                    </p>
+                                </div>
+                                <div class="value-card">
+                                    <h4>Client Partnership</h4>
+                                    <p>
+                                        We view every project as a collaboration. Your success is our success,
+                                        and we're invested in your growth.
+                                    </p>
+                                </div>
+                                <div class="value-card">
+                                    <h4>Continuous Learning</h4>
+                                    <p>
+                                        Technology evolves rapidly. We stay ahead by constantly learning
+                                        and adapting to new tools and best practices.
+                                    </p>
+                                </div>
+                                <div class="value-card">
+                                    <h4>Results Driven</h4>
+                                    <p>
+                                        Beautiful code and design matter, but what matters most is delivering
+                                        measurable business value.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about__tech">
+                            <h3>Our Tech Stack</h3>
+                            <div class="tech-stack">
+                                <div class="tech-category">
+                                    <h4>Frontend</h4>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag">React</span>
+                                        <span class="tech-tag">Next.js</span>
+                                        <span class="tech-tag">TypeScript</span>
+                                        <span class="tech-tag">Redux</span>
+                                        <span class="tech-tag">Tailwind CSS</span>
+                                    </div>
+                                </div>
+                                <div class="tech-category">
+                                    <h4>Backend</h4>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag">Node.js</span>
+                                        <span class="tech-tag">Express</span>
+                                        <span class="tech-tag">PostgreSQL</span>
+                                        <span class="tech-tag">MongoDB</span>
+                                        <span class="tech-tag">GraphQL</span>
+                                    </div>
+                                </div>
+                                <div class="tech-category">
+                                    <h4>Tools & Cloud</h4>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag">Git</span>
+                                        <span class="tech-tag">Docker</span>
+                                        <span class="tech-tag">AWS</span>
+                                        <span class="tech-tag">Vercel</span>
+                                        <span class="tech-tag">Figma</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section section--contact" id="contact">
+            <div class="container">
+                <div class="contact">
+                    <div class="contact__info">
+                        <h2 class="contact__title">Let's Work Together</h2>
+                        <p class="contact__description">
+                            Have a project in mind? We'd love to hear about it. Whether you need a complete
+                            application, a design refresh, or technical consultation, let's discuss how we can help.
+                        </p>
+
+                        <div class="contact__details">
+                            <div class="contact__detail">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M3 8L10.89 13.26C11.5417 13.6771 12.4583 13.6771 13.11 13.26L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:hello@gridlinestudio.com">hello@gridlinestudio.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact__detail">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M17.657 16.657L13.414 20.9C13.039 21.275 12.535 21.485 12.01 21.485C11.485 21.485 10.981 21.275 10.606 20.9L6.343 16.657C5.22422 15.5381 4.46234 14.1127 4.15369 12.5608C3.84504 11.009 4.00349 9.40047 4.60901 7.93868C5.21452 6.4769 6.2399 5.22749 7.55548 4.34846C8.87107 3.46943 10.4178 3 12 3C13.5822 3 15.1289 3.46943 16.4445 4.34846C17.7601 5.22749 18.7855 6.4769 19.391 7.93868C19.9965 9.40047 20.155 11.009 19.8463 12.5608C19.5377 14.1127 18.7758 15.5381 17.657 16.657V16.657Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Lagos, Nigeria</p>
+                                </div>
+                            </div>
+
+                            <div class="contact__detail">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor"
+                                        stroke-width="2" />
+                                    <path d="M8 21H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                    <path d="M12 17V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                                <div>
+                                    <h4>Availability</h4>
+                                    <p>Taking on new projects</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact__form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required autocomplete="name">
+                            <span class="form-error" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-input" required
+                                autocomplete="email">
+                            <span class="form-error" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service" class="form-label">Service Interested In</label>
+                            <select id="service" name="service" class="form-input" required>
+                                <option value="">Select a service</option>
+                                <option value="react-development">React Development</option>
+                                <option value="fullstack">Full-Stack Development</option>
+                                <option value="product-design">UI/UX & Product Design</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="form-error" id="serviceError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Project Details</label>
+                            <textarea id="message" name="message" class="form-input form-textarea" rows="5"
+                                required></textarea>
+                            <span class="form-error" id="messageError"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--full">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3>Gridline Studio</h3>
+                    <p>Development Agency</p>
+                </div>
+
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#work">Work</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://github.com/gridlinestudio" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a></li>
+                            <li><a href="https://linkedin.com/company/gridlinestudio" target="_blank"
+                                    rel="noopener noreferrer">LinkedIn</a></li>
+                            <li><a href="https://twitter.com/gridlinestudio" target="_blank"
+                                    rel="noopener noreferrer">Twitter</a></li>
+                            <li><a href="mailto:hello@gridlinestudio.com">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2026 Gridline Studio. All rights reserved.</p>
+                <p class="footer__credit">Engineered with precision and passion</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Service Interest Modal -->
+    <div class="modal" id="serviceModal">
+        <div class="modal__overlay" id="modalOverlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" id="modalClose" aria-label="Close modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+
+            <h3 class="modal__title" id="modalTitle">Get Started</h3>
+            <p class="modal__description" id="modalDescription"></p>
+
+            <form class="modal__form" id="serviceForm">
+                <div class="form-group">
+                    <label for="modalName" class="form-label">Your Name</label>
+                    <input type="text" id="modalName" class="form-input" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="modalEmail" class="form-label">Your Email</label>
+                    <input type="email" id="modalEmail" class="form-input" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="modalDetails" class="form-label">Project Description</label>
+                    <textarea id="modalDetails" class="form-input form-textarea" rows="4"
+                        placeholder="Tell us about your project..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--full">Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Toast -->
+    <div class="toast" id="successToast">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2" />
+            <path d="M6 10L9 13L14 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+        <span id="toastMessage">Message sent successfully!</span>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
